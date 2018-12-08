@@ -1,0 +1,26 @@
+﻿@model DonationRequestSListViewModel
+<div>
+	<div class="list-group list-group-flush pre-scrollable" style="display:inline-block;margin:auto;height:100%;width:auto;float:left">
+
+
+		@foreach (var req in Model.Requests)
+		{
+			<div class="list-group-item-action" style="width:inherit;">
+					@Html.Partial("RequestOverviewSummary", req)
+			</div>
+		}
+
+	</div>
+
+	<div style="display: table-cell;padding-inline-start: 60px;padding-top: 100px;font-size: xx-large;" class="text-primary">
+		Alegeti o cerere de donatie din lista din stanga!
+	</div>
+</div>
+
+	@*  *@
+
+	<div style="padding-top:300px;padding-left:650px">
+		<a class="btn btn-primary" asp-controller="AddDonation" asp-action="Add">Adauga o cerere</a>
+	</div>
+	
+  

@@ -1,0 +1,83 @@
+﻿<div class="container mt-4">
+	<form action="#" method="post">
+
+		<div class="row pt-3">
+
+			<div class="col-3">
+				<select class="form-control" id="as_anrede">
+					<option>Barbat</option>
+					<option>Femeie</option>
+					<option>???</option>
+				</select>
+			</div>
+
+			<div class="col-4">
+
+				<input type="text" class="form-control" id="as_vorname" placeholder="Nume">
+			</div>
+
+			<div class="col-5">
+
+				<input type="text" class="form-control" id="as_nachname" placeholder="Prenume" onblur="fill_as_email()">
+			</div>
+
+		</div>
+
+		<div class="row pt-3">
+			<div class="col-6">
+				<input type="email" class="form-control" id="as_email" placeholder="e-mail">
+			</div>
+
+			<div class="col-3">
+				<input type="text" class="form-control" id="as_durchwahl" placeholder="Numar de telefon" maxlength="10">
+			</div>
+
+		</div>
+
+		<div class="row pt-3">
+
+			<div class="col">
+
+				<select class="form-control" id="as_standort">
+					<option>Bucuresti</option>
+					<option>Dragasani</option>
+					<option>Baicoi</option>
+					<option>Craiova</option>
+					<option>Constanta</option>
+				</select>
+			</div>
+
+			<div class="col">
+				<select class="form-control" id="as_abteilung">
+					<option>Bucuresti</option>
+					<option>Valcea</option>
+					<option>Suceava</option>
+					<option>Dolj</option>
+					<option>Olt</option>
+				</select>
+			</div>
+
+		</div>
+
+		<hr>
+
+
+		<div class="alert alert-primary" role="alert">
+			<h2>Trimite o cerere si asteapta sa fii contactat de echipa Give Blood.</h2>
+			<div class="row">
+				<div class="col-8">
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="write here" aria-label="Empfänger" aria-describedby="empfaenger">
+						<div class="input-group-append">
+							<span class="input-group-text" id="empfaenger">&#64;gmail.com</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<button type="submit" class="btn btn-primary">Send</button>
+		</div>
+
+	</form>
+</div>

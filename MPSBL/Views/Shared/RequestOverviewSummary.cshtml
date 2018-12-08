@@ -1,0 +1,22 @@
+﻿@model DonationRequest
+<script type="text/javascript">
+	@*$(".thumbnail").click(function () {
+		window.location.href ="@Url.Action("Request", "DonationRequest")" + "/" +;
+	});*@
+
+	function redirect(reqid) {
+		var id = reqid;
+		window.location.href ="@Url.Action("Request", "DonationRequest")" + "/" + id;
+	}
+</script>
+
+	<div class="thumbnail" onclick="redirect(@Model.DonationRequestId)">
+		<div class="caption">
+			<h3 class="pull-right"><b>Doctor: </b>@Model.Doctor <b>Pacient: </b>@Model.Pacient</h3>
+			<h3>
+				<a style="color:aquamarine">@Model.CenterName</a>
+			</h3>
+			<p>@Model.Description</p>
+		</div>
+		<text id="reqId" style="display:none" >@Model.DonationRequestId</text>
+	</div>

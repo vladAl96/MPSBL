@@ -1,0 +1,39 @@
+﻿@model DonationRequest
+
+<form asp-action="Add" method="post" class="form-horizontal" role="form">
+	<h4>Completati detaliile cererii de donatie:</h4>
+
+	<div asp-validation-summary="All" class="text-danger"></div>
+	<div class="form-group col-md-5">
+		<label asp-for="Pacient" class="col-md-2 control-label"></label>
+		<input asp-for="Pacient" class="form-control" />
+		<span asp-validation-for="Pacient" class="text-danger"></span>
+	</div>
+
+	<div class="form-group col-md-5">
+		<label asp-for="Description" class="col-md-2 col-xl-2 control-label"></label>
+		<input asp-for="Description" class="form-control" style="height:150px" />
+		<span asp-validation-for="Description" class="text-danger"></span>
+	</div>
+
+	<div class="form-group col-md-5">
+		<label asp-for="Doctor" class="col-md-2 control-label"></label>
+		<input asp-for="Doctor" class="form-control" />
+		<span asp-validation-for="Doctor" class="text-danger"></span>
+	</div>
+
+	<div class="form-group col-md-5">
+		<label asp-for="CenterName">Selectati centrul:</label>
+		<select asp-for="CenterName" class="form-control">
+			<option>MedLife </option>
+			<option>Regina Maria</option>
+		</select>
+		<span asp-validation-for="CenterName" class="text-danger"></span>
+	</div>
+
+	<div class="form-group">
+		<div class="offset-md-2 col-md-5">
+			<input type="submit" class="btn btn-primary" value="Trimite cerere" />
+		</div>
+	</div>
+</form>

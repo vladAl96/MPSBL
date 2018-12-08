@@ -1,0 +1,15 @@
+﻿@model RequestViewModel
+
+<div class="thumbnail">
+	<div class="container">
+		<h3 class="pull-right">Request Nr. @Model.req.DonationRequestId</h3>
+		<h3>Pacient: @Model.req.Pacient </h3>
+		<h4>Doctor: @Model.req.Doctor</h4>
+		<h3><a style="color:aquamarine">@Model.req.CenterName</a></h3>
+		<img src="~/Images/@(@Model.req.CenterName+ ".png")" />
+		<p>@Model.req.Description</p>
+		<div class="text">Cererea a fost publicata pe: @Model.req.DateIssued</div>
+		<h5>@Model.req.numberDonated au donat</h5>
+		<button class="btn" style="background:#4CAF50">Doneaza!</button>
+	</div>
+</div>

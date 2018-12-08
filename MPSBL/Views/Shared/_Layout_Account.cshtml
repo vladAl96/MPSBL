@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" />
+	<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+	<link href="~/Content/style.css" rel="stylesheet" />
+	@*<link href="~/Content/style2.css" rel="stylesheet" />*@
+	<script src="~/lib/jquery/dist/jquery.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="~/Scripts/MyScript.js"></script>
+	<title>MPSBL</title>
+</head>
+<body>
+	<div>
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><img src="~/Images/logo.png"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="/"> HOME </a>
+						</li>
+						<!-- Autentificare -->
+						<li class="nav-item">
+							<a class="nav-link" href="/DonationRequest/List">  AllDonations </a>
+						</li>
+						<!-- Modalitate usoara de comunicare intre medici si pacienti-->
+						<li class="nav-item">
+							<a class="nav-link" href="/Home/Chat"> Chat </a>
+						</li>
+						<!-- Chestionar -->
+						<li class="nav-item">
+							<a class="nav-link" href="/Home/Chestionar"> Chestionar </a>
+						</li>
+						<!-- Vreau sa donez-->
+						<li class="nav-item">
+							<a class="nav-link" href="/Home/Form"> Vreau sa donez </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+	<div>
+		@RenderBody()
+	</div>
+</body>
+</html>
