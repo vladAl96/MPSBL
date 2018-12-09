@@ -24,27 +24,33 @@
 
 				</button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="/"> HOME </a>
-						</li>
-						<!-- Autentificare -->
-						<li class="nav-item">
-							<a class="nav-link" href="/DonationRequest/List">  AllDonations </a>
-						</li>
-						<!-- Modalitate usoara de comunicare intre medici si pacienti-->
-						<li class="nav-item">
-							<a class="nav-link" href="/Home/Chat"> Chat </a>
-						</li>
-						<!-- Chestionar -->
-						<li class="nav-item">
-							<a class="nav-link" href="/Home/Chestionar"> Chestionar </a>
-						</li>
-						<!-- Vreau sa donez-->
-						<li class="nav-item">
-							<a class="nav-link" href="/Home/Form"> Vreau sa donez </a>
-						</li>
-					</ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/"> HOME </a>
+                        </li>
+                        <!-- Autentificare -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/DonationRequest/List">  MyDonations </a>
+                        </li>
+                        <!-- Modalitate usoara de comunicare intre medici si pacienti-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/Chat"> Chat </a>
+                        </li>
+                        <!-- Chestionar -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Home/Chestionar"> Chestionar </a>
+                        </li>
+                        <!-- Vreau sa donez-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="/DonationRequest/List"> Vreau sa donez </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" id="logoutForm">
+                            <a class="nav-link" href="javascript:document.getElementById('logoutForm').submit()">Logout</a>
+                            </form>
+                        </li>
+                    </ul>
 				</div>
 			</div>
 		</nav>

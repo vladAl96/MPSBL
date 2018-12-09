@@ -1,3 +1,14 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+@inject SignInManager<IdentityUser> SignInManager
+
+
+@if(SignInManager.IsSignedIn(User))
+{
+    Layout = "_Layout_Account";
+}
+else
+{
     Layout = "_Layout";
 }
